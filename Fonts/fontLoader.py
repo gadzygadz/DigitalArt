@@ -3,7 +3,7 @@ from subprocess import call
 from glob import glob
 import platform
 
-if platform.system() == "Linux":
+if platform.system() != "Windows":
     try:
         os.system("mkdir -p ~/.local/share/fonts")
     except:
